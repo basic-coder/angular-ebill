@@ -10,6 +10,7 @@ import { EditComponent } from './Bill/edit/edit.component';
 import { AboutComponent } from './Bill/about/about.component';
 import { ContactComponent } from './Bill/contact/contact.component';
 import { ResumeComponent } from './Bill/resume/resume.component';
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ResumeComponent } from './Bill/resume/resume.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BillModule
+    BillModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
