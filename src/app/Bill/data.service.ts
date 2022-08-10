@@ -6,12 +6,15 @@ import { Data } from './data';
   providedIn: 'root'
 })
 export class DataService {
+  url="http://localhost:4000/api/bill"
 
   constructor(private http: HttpClient) {
-
+    console.log(this.getData());
+    
+  }
+    getData(){
+     return this.http.get(this.url)
+     }
    }
-
-   getData(){
-    this.http.get<Data[]>("http://localhost:4000/api/bill")
-   }
-}
+  
+   

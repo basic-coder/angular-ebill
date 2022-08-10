@@ -8,16 +8,28 @@ import { DataService } from '../data.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  allData: Data[] = []
-  constructor(private ds:DataService) { }
+  allData:any;
+  constructor(private ds:DataService) { 
 
-  ngOnInit(): void {
-  }
-
-  get(){
-    this.ds.getData().subscribe((res:any)=>{
+  
+    ds.getData().subscribe((res:any)=>{
+      console.log("res",res);
+      
       this.allData = res;
     })
   }
+
+  
+
+  ngOnInit(){
+  }
+
+  // get(){
+  //   this.ds.getData().subscribe((res:any)=>{
+  //     console.log("res",res);
+      
+  // //     this.allData = res;
+  //   })
+  // }
 
 }

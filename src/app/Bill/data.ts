@@ -1,7 +1,7 @@
 export interface Data {
-    id?:number;
-    paidDate:Date;
+    _id?:number;
     billDate:Date;
-    unitConsume:number;
-    amount:number
+    paidDate:Date;
+    unitConsumed:number;
+    amount:number;
 }

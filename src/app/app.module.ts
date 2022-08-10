@@ -20,7 +20,8 @@ import {HttpClientModule} from '@angular/common/http'
     EditComponent,
     AboutComponent,
     ContactComponent,
-    ResumeComponent
+    ResumeComponent,
+    
   ],
   imports: [
     BrowserModule,
